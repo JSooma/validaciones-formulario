@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta datos -->
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta name="autor" content="Andres Mendoza">
+        <meta name="copyright" content="Create by Andres Mendoza">
+        <meta name="description" content="Formulario">
+        <meta name="keywords" content="Andres Mendoza, andresmendoza, Andres, Mendoza, andres, mendoza">
+        <meta name="theme-color" content="#222">
+        <!-- Protocolo Open Graph -->
+        <meta property="og:title" content="Formulario">
+        <meta property="og:description" content="Formulario responsive">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://andresmendoza.net/">
+        <meta property="og:img" content="https://andresmendoza.net/...">
+        <!-- Etiquetas link -->
+        <link rel="stylesheet" type="text/css" href="comun/css/header-style.css">
+        <link rel="stylesheet" type="text/css" href="comun/css/style.css">
+        <link rel="stylesheet" type="text/css" href="comun/css/footer-style.css">
+        <link rel='stylesheet' type='text/css' href='comun/css/normalize.css'>
+        <link rel="canonical" href="https://andresmendoza.net/">
+        <link rel="icon" href="comun/multimedia/img/favicon.png">
+        <link rel="apple-touch-icon" href="comun/multimedia/img/favicon.png">
+        <script defer src='comun/js/index.js' type="module"></script>
+        <title>Formulario</title>
+    </head>
+    <body>
+    <noscript><h2>Tú necesitas tener habilitado JavaScript para acceder a esta página.</h2></noscript>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                <p class="header-container__p">Favor de llenar el formulario.</p>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main-container">
+                <p class="main-container__p">Formulario de registro.</p>
+                <form class="main-container__form" action="https://formsubmit.co/cesaraz678@gmail.com" method="post" autocomplete="off">
+                    <input class="main-container__input" type="text" name="nombre" placeholder="Nombre(s)" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Solo puedes ingresar letras y espacios" required>
+                    <input class="main-container__input" type="text" name="apellido paterno" placeholder="Apellido paterno" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Solo puedes ingresar letras y espacios" required>
+                    <input class="main-container__input" type="text" name="apellido materno" placeholder="Apellido materno" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Solo puedes ingresar letras y espacios" required>
+                    <input class="main-container__input" type="email" name="email" placeholder="Correo" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Ingresa un correo valido" required>
+                    <input class="main-container__input" type="password" name="clave" placeholder="Contraseña" pattern="^.{8,}$" title="La contraseña debe ser igual o mayor a 8 caracteres" required>
+                    <select class="main-container__select" required>
+                        <option class="main-container__option" value="">Seleccione su idioma.</option>
+                        <option class="main-container__option" value="es">Español</option>
+                        <option class="main-container__option" value="en">Ingles</option>
+                        <option class="main-container__option"  value="it">Italiano</option>
+                        <option class="main-container__option" value="jp">Japones</option>
+                    </select>
+                    <fieldset class="main-container__fieldset">
+                        <legend class="main-container__legend">Elige alguna actividad</legend>
+                        <label class="main-container__labelbtn">
+                            Deporte:
+                            <input class="main-container__radiobtn" type="radio" name="pasatiempo" value="deporte" required>
+                        </label>
+                        <label class="main-container__labelbtn">
+                            Programación:
+                            <input class="main-container__radiobtn" type="radio" name="pasatiempo" value="programacion">
+                        </label>
+                        <label class="main-container__labelbtn">
+                            Música:
+                            <input class="main-container__radiobtn" type="radio" name="pasatiempo" value="musica">
+                        </label>
+                    </fieldset>
+                    <label class="main-container__label">¿Acepta los terminos y condiciones?</label>
+                    <input class="main-container__checkbox" type="checkbox" required>
+                    <input class="main-container__btn" type="submit">
+                    <div class="main-container__simulation-container">
+                        <p class="main-container__p none">Formulario enviado con éxito.</p>
+                        <svg class="main-container__svg none" width="60" height="60" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+                            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
+                                <circle cx="22" cy="22" r="6" stroke-opacity="0">
+                                    <animate attributeName="r"
+                                         begin="1.5s" dur="3s"
+                                         values="6;22"
+                                         calcMode="linear"
+                                         repeatCount="indefinite" />
+                                    <animate attributeName="stroke-opacity"
+                                         begin="1.5s" dur="3s"
+                                         values="1;0" calcMode="linear"
+                                         repeatCount="indefinite" />
+                                    <animate attributeName="stroke-width"
+                                         begin="1.5s" dur="3s"
+                                         values="2;0" calcMode="linear"
+                                         repeatCount="indefinite" />
+                                </circle>
+                                <circle cx="22" cy="22" r="6" stroke-opacity="0">
+                                    <animate attributeName="r"
+                                         begin="3s" dur="3s"
+                                         values="6;22"
+                                         calcMode="linear"
+                                         repeatCount="indefinite" />
+                                    <animate attributeName="stroke-opacity"
+                                         begin="3s" dur="3s"
+                                         values="1;0" calcMode="linear"
+                                         repeatCount="indefinite" />
+                                    <animate attributeName="stroke-width"
+                                         begin="3s" dur="3s"
+                                         values="2;0" calcMode="linear"
+                                         repeatCount="indefinite" />
+                                </circle>
+                                <circle cx="22" cy="22" r="8">
+                                    <animate attributeName="r"
+                                         begin="0s" dur="1.5s"
+                                         values="6;1;2;3;4;5;6"
+                                         calcMode="linear"
+                                         repeatCount="indefinite" />
+                                </circle>
+                            </g>
+                        </svg>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <p class="footer-container__p">Created by Andrés Mendoza</p>
+            </div>
+        </footer>
+    </div>
+    </body>
+</html>

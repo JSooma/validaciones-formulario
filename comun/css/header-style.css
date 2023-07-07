@@ -1,0 +1,17 @@
+/* ************************************* Header styles ************************************* */
+.header {
+    width: 100%;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--secundary-color);
+}
+
+.header-container {
+    padding: 0.8rem;
+
+}
+
+.header-container__p {
+    color: var(--secundary-color);
+    font-family: "Figtree", "Tahoma";
+    text-align: center;
+}

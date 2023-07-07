@@ -1,0 +1,15 @@
+.footer {
+    background-color: var(--primary-color);
+    width: 100%;
+    border-top: 1px solid var(--secundary-color);
+}
+
+.footer-container {
+    padding: 0.8rem;
+}
+
+.footer-container__p {
+    color: var(--secundary-color);
+    text-align: center;
+    font-family: "Figtree", "Tahoma";
+}

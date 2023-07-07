@@ -1,0 +1,156 @@
+/* ************************************* Custom properties ************************************* */
+:root {
+    --primary-color: #826ab4;
+    --secundary-color: #ffffce;
+    --txt-color: #fefefe;
+    --dark-color: #222;
+    --light-color: #fcefea;
+    --valid-color: #659461;
+    --invalid-color: #b44c5c; 
+}
+
+/* ************************************* Fluid design ************************************* */
+html {
+    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1400 - 300)));
+}
+
+/* ************************************* Fonts ************************************* */
+@font-face {
+    font-family: "Figtree";
+    src: url(../font/Figtree.ttf);
+}
+
+/* ************************************* Body styles ************************************* */
+
+body {
+    background-color: var(--dark-color);
+}
+
+.main {
+    width: 100%;
+}
+
+.main-container {
+    width: 50%;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.main-container__p, .main-container__h2 {
+    color: var(--txt-color);
+    font-family: "Figtree", "Tahoma";
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.main-container__form {
+    margin: auto;
+    padding: 0.8rem;
+    border: 3px solid var(--secundary-color);
+    border-radius: 10px;
+}
+
+.main-container__input, .main-container__select, .main-container__btn {
+    display: block;
+    width: 40%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.25rem;
+    border: 0;
+    font-family: "Figtree", "Tahoma";
+    border-radius: 5px;
+}
+
+.main-container__input {
+    color: var(--txt-color);
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid var(--light-color);
+}
+
+.main-container__labelbtn, .main-container__legend, .main-container__label {
+    display: block;
+    color: var(--txt-color);
+    font-family: "Figtree", "Tahoma";
+}
+
+.main-container__label {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.main-container__checkbox {
+    display: block;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.main-container__btn {
+    color: var(--txt-color);
+    background-color: transparent;
+    margin: auto;
+    cursor: pointer;
+    border: 1px solid var(--light-color);
+}
+
+.main-container__input[required]:valid { /* Si todo lo que haya en form que tenga el atributo requerido es valido */
+    border-bottom: thin solid var(--valid-color);
+}
+
+.main-container__input[required]:invalid { /* Sí todo lo que haya en form que tenga el atributo requerido es invalido */
+    border-bottom: thin solid var(--invalid-color);
+}
+
+.main-container__span {
+    margin-top: -2rem;
+    color: var(--txt-color);
+    background-color: var(--invalid-color);
+    width: 40%;
+    font-family: "Figtree", "Tahoma";
+    text-align: center;
+    transition: all 10s ease-in-out;
+}
+
+.main-container__span.is-active {
+    display: block;
+    animation: show-message 1s 1 normal 0s ease-in-out both;
+
+}
+
+.none {
+    display: none;
+}
+
+.main-container__simulation-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.8rem;
+}
+
+/* ************************************* Pseudo clases ************************************* */
+.main-container__input:focus {
+    outline: 0;
+}
+
+.main-container__btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* ************************************* Pseudo elementos ************************************* */
+.main-container__input:focus::placeholder {
+    color: transparent;
+}
+
+/* ************************************* Animations ************************************* */
+
+@keyframes show-message {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
